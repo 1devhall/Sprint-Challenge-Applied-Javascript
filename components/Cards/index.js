@@ -40,7 +40,8 @@ axios.get("https://lambda-times-backend.herokuapp.com/articles")
         const aImg = document.createElement('img');
         const name = document.createElement('span');
 
-        card.append(headline, author, imgC, name);
+        card.append(headline, author);
+        author.append(imgC, name)
         imgC.append(aImg);
         
 
